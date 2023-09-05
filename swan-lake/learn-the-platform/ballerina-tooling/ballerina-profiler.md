@@ -10,6 +10,8 @@ Improvements in your Ballerina code might be required to increase its runtime pe
 
 Ballerina Profiler is a tool that monitors Ballerina runtime and its operations such as function calls. It can be used to understand the behavior and troubleshoot the performance issues of a Ballerina program and optimize it.
 
+>**Note:** Ballerina Profiler is an experimental feature, which supports only a limited set of functionality.
+
 ## Features
 
 - Profiles a local session of a Ballerina program through offline instrumentation.
