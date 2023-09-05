@@ -291,6 +291,15 @@ export default function Platform(props) {
 
             <div className={styles.content}>
               <p className={styles.title}>
+                <a href={`${prefix}/learn/ballerina-profiler`} className={styles.titleLink}>
+                  Ballerina Profiler
+                </a>
+              </p>
+              <p className={styles.description}>Profile a Ballerina package and create a flame graph.</p>
+            </div>
+
+            <div className={styles.content}>
+              <p className={styles.title}>
                 <a href={`${prefix}/learn/cli-documentation/cli-commands`} className={styles.titleLink}>
                   CLI documentation
                 </a>

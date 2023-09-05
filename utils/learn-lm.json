@@ -203,7 +203,7 @@
                         {
                             "dirName": "CLI documentation",
                             "level": 3,
-                            "position": 6,
+                            "position": 7,
                             "isDir": true,
                             "url": "/learn/ballerina-tooling/cli-documentation",
                             "id": "cli-documentation",
@@ -281,6 +281,14 @@
                             "isDir": false,
                             "url": "/learn/strand-dump-tool",
                             "id": "strand-dump-tool"
+                        },
+                        {
+                            "dirName": "Ballerina Profiler",
+                            "level": 3,
+                            "position": 6,
+                            "isDir": false,
+                            "url": "/learn/ballerina-profiler",
+                            "id": "ballerina-profiler"
                         }
                     ]
                 },

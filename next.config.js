@@ -114,6 +114,10 @@ const nextConfig = {
         destination: `/${redirectBase}learn/learn-the-platform/ballerina-tooling/strand-dump-tool`,
       },
       {
+        source: `/${redirectBase}learn/ballerina-profiler`,
+        destination: `/${redirectBase}learn/learn-the-platform/ballerina-tooling/ballerina-profiler`,
+      },
+      {
         source: `/${redirectBase}learn/ballerina-shell`,
         destination: `/${redirectBase}learn/learn-the-platform/ballerina-tooling/ballerina-shell`,
       },
