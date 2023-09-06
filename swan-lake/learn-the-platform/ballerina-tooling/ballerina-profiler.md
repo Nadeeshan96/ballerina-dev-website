@@ -41,8 +41,8 @@ $ cd sort
 Replace the contents of the `main.bal` file with the following Ballerina code, which creates an array of random integers, sorts them, and verifies the output.
 
 ```ballerina
-import ballerina/random;
 import ballerina/io;
+import ballerina/random;
 
 public function main() returns error? {
     int[] arr = check createRandomIntArray(check float:pow(10, 2).cloneWithType(int));
@@ -113,13 +113,13 @@ Note: This is an experimental feature, which supports only a limited set of func
 [3/6] Performing analysis...
 [4/6] Instrumenting functions...
  ○ Instrumented module count: 31
- ○ Instrumented function count: 1015
+ ○ Instrumented function count: 1016
 [5/6] Running executable...
 Is the array sorted? true
 [6/6] Generating output...
- ○ Execution time: 5 seconds 
+ ○ Execution time: 3 seconds 
  ○ Output: target/bin/ProfilerOutput.html
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 ```
 
 Open the `target/bin/ProfilerOutput.html` file using a web browser window to examine the Ballerina Profiler output to find the slow-running functions and performance bottlenecks, which can then be addressed to improve the program’s overall performance.
@@ -161,8 +161,8 @@ Let's try to optimize the sorting function to increase the performance of our Ba
 In this example, we will use another sorting algorithm to reduce the time taken to execute our application. Let’s replace the `main.bal` file with the code below which uses the merge sort algorithm instead of the bubble sort algorithm for sorting.
 
 ```ballerina
-import ballerina/random;
 import ballerina/io;
+import ballerina/random;
 
 public function main() returns error? {
     int[] arr = check createRandomIntArray(check float:pow(10, 2).cloneWithType(int));
@@ -341,7 +341,7 @@ Note: This is an experimental feature, which supports only a limited set of func
 [5/6] Running executable...
 ```
 
-Send 10 requests to each resource endpoint using the curl command.
+Send 10 requests to each resource endpoint using the `curl` command.
 
 ```
 $ curl localhost:8080/covid19/countries/names
@@ -355,7 +355,7 @@ Stop the service by sending the `SIGINT` signal to the Ballerina program. We can
 
 ```
 [6/6] Generating output...
- ○ Execution time: 2 seconds 
+ ○ Execution time: 58 seconds 
  ○ Output: target/bin/ProfilerOutput.html
 --------------------------------------------------------------------------------
 ```
